@@ -47,9 +47,7 @@ int main(int argc, char *argv[]){
 
   //handles any other unrecognized arg with an error message
   else {
-    printf("Invalid command line option");
-    perror(argv[1]);
-    printf("\n");
+    fprintf(stderr,"Invalid command line option %s \n",argv[1]);
   }
 
   return 0;
