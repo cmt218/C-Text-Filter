@@ -9,9 +9,8 @@
 
 //include statements for necessary libraries
 #include <stdio.h>
-#include <strings.h>
+#include <string.h>
 #include <ctype.h>
-
 
 int main(int argc, char *argv[]){
 
@@ -21,17 +20,14 @@ int main(int argc, char *argv[]){
   if(argc >1 && strcmp(argv[1], "-u") == 0){
     while((i = getchar()) != EOF){
       int outch = toupper(i);
-
       putchar(outch);
     }
   }
-
   
   //case where user inputs -l for lowercase  
   else if(argc >1 && strcmp(argv[1],"-l") == 0){
     while((i = getchar()) != EOF){
       int outch = tolower(i);
-
       putchar(outch);
     }
   }
